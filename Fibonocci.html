@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=0,b=1,c=0,input=prompt("Enter n");
+    // Fibonocci Normal Method
+
+    // document.write(a+" "+b);
+    // function fibonocci(n)
+    // {
+    //     for(i=0;i<n-2;i++) 
+    //     {
+    //         c=a+b;
+    //         document.write(" "+c);
+    //         a=b;
+    //         b=c;
+    //     }
+    //     return c;
+    // }
+    // fibonocci(input);
+
+    //Fibonocci using Recursion
+    function fib(n)
+    { 
+    if (n <= 1) 
+        return n; 
+    else
+        return fib(n-1) + fib(n-2); 
+    } 
+    for(i=0;i<input;i++)
+    {
+    document.write(" "+fib(c));
+    c++;
+    }
+    </script>
+    
+</body>
+</html>
