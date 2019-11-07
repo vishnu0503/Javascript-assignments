@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var n=prompt("Enter number of elements in a array"),i;
+    var arr=new Array(n);
+    for(i=0;i<n;i++)
+    {
+        arr[i]=prompt();
+    }
+    var str=arr.toString();
+    document.write(arr.toString().replace(/,/gi," "));
+    </script>
+</body>
+</html>
