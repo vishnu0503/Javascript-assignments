@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter Number of element in the array");
+        var arr=new Array(n),i,sum=0,product=1;
+        for(i=1;i<=n;i++)
+        {
+            arr[i]=prompt("Enter element "+i);
+            sum=sum+parseInt(arr[i]);
+            product=product*arr[i];
+        }
+        document.write("Sum : "+sum);
+        document.write("<br>Product :"+product);
+    </script>
+</body>
+</html>
