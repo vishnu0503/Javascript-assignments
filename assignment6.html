@@ -1,0 +1,66 @@
+<!-- *****************************************************************************
+    Description: write a javascript program to a small stone game
+    Author     : Srikanth S
+    Start Date : 25/10/19
+    End Date   : 25/10/19
+    ***************************************************************************-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WSA-assignment6</title>
+</head>
+
+<body>
+    <script>
+        var stones = +(prompt("enter number of stones"));
+        var c = 1;
+        while (stones > 0) {
+            if (c == 1) {
+                var pl1 = +(prompt("pl1 enter number of stones top remove"));
+                if (pl1 <= stones) {
+                    if (pl1 == 1 || pl1 == 2 || pl1 == 3) {
+                        stones = stones - pl1;
+                        c = c + 1;
+                        if (stones <= 0) {
+                            document.write("pl1 won the match");
+                        }
+                    }
+                    else {
+                        window.alert("you have to remove 1 or 2 or 3 stones at a time")
+                    }
+                }
+                else {
+                    window.alert("try again");
+                }
+
+            }
+
+            else if (c == 2) {
+                var pl2 = +(prompt("pl2 enter number of stones top remove"));
+                if (pl2 <= stones) {
+                    if (pl2 == 1 || pl2 == 2 || pl2 == 3) {
+                        stones = stones - pl2;
+                        c = c - 1;
+                        if (stones <= 0) {
+                            document.write("pl2 won the match");
+                        }
+                    }
+                    else {
+                        window.alert("you have to remove 1 or 2 or 3 stones at a time")
+                    }
+                }
+                else {
+                    window.alert("try again");
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
