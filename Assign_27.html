@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var str=prompt("Enter the input string"),i;
+    document.write(str[0].toUpperCase());
+    for(i=1;i<str.length;i++)
+    {
+        if(str[i]==" ")
+        {
+            document.write(str[i]);  
+            document.write(str[i+1].toUpperCase());
+            i++;
+        }
+        else
+        {
+            document.write(str[i]);
+        }
+    }
+    </script>
+</body>
+</html>
