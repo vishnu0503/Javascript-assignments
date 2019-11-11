@@ -11,10 +11,11 @@
     var str=prompt("Enter a string"),i;
     var arr=str.split(" ");
     var regExpr = new RegExp("[0-9]{2}([/])[0-9]{2}[/][0-9]{4}");
+        document.write("Dates in a string are :");
     for(i=0;i<arr.length;i++)
     {
         if(regExpr.test(arr[i])==true)
-        document.write(arr[i]);
+        document.write(arr[i]+"<br>");
     }
     </script>
 </body>
