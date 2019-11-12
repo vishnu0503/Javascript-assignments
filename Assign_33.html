@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var rectangle={
+        width:prompt("Enter width "),
+        height:prompt("Enter height "),
+        Area:function()
+        {
+            var area=this.width*this.height;
+            return area;
+        },
+        Perimeter:function()
+        {
+            var sum=parseInt(this.width)+parseInt(this.height);
+            var perimeter=2*sum;
+            return perimeter;
+        }
+    }
+    document.write("Area of a rectangle : "+rectangle.Area());
+    document.write("<br>Perimeter of a rectangle : "+rectangle.Perimeter());
+    </script>
+</body>
+</html>
