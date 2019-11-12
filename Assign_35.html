@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var doctor=function()
+     {
+          this.docName=prompt("Enter doctor name ");
+          this.docExp=prompt("Enter doctor experience");
+     }
+     var nurse=function()
+     {
+         this.nurseName=prompt("Enter nurse name ");
+         this.nurseExp=prompt("Enter nurse experience");
+     }
+     
+     nurse.prototype=new doctor();
+     doctor.prototype.patientName=prompt("Enter patient name");
+     var obj=new nurse();
+     document.write("<b>Doctor name : </b>"+obj.docName);
+     document.write("<br><b>Doctor experience : </b>"+obj.docExp);
+     document.write("<br><b>Nurse name : </b>"+obj.nurseName);
+     document.write("<br><b>Nurse experience : </b>"+obj.nurseExp);
+     document.write("<br><b>Patient name : </b>"+obj.patientName);
+    </script>
+</body>
+</html>
