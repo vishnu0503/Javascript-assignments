@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function person(firstName, age, phoneNumber)
+    {
+        this.firstName=firstName;
+        this.age=age;
+        this.phoneNumber=phoneNumber;
+    }
+    var firstName=prompt("Enter first name ");
+    var age=prompt("Enter age");
+    var phoneNumber=prompt("Enter phone number");
+    var xy=new person(firstName, age, phoneNumber);
+    person.prototype.lastName=prompt("Enter last name");
+    document.write("First Name : "+xy.firstName);
+    document.write("<br>Last Name : "+xy.lastName);
+    document.write("<br>Age : "+xy.age);
+    document.write("<br>Phone Number : "+xy.phoneNumber);
+    </script>
+</body>
+</html>
