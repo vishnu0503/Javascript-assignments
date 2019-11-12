@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var employee={
+        empName:prompt("Enter employee name "),
+        empId:prompt("Enter employee id "),
+        empSalary:prompt("Enter employee salary"),
+        deptName:prompt("Enter employee Department")
+    };
+    document.write("Employee Name : "+employee.empName);
+    document.write("<br>Employee ID : "+employee.empId);
+    document.write("<br>Employee salary : "+employee.empSalary);
+    document.write("<br>Emplyee Department : "+employee.deptName);
+
+    document.write("<br>Length of Employee Object : "+Object.keys(employee).length);
+    delete employee.deptName;
+    document.write("<br>deptName property is deleted");
+    document.write("<br>Length of Employee Object after deletion : "+Object.keys(employee).length);
+    </script>
+</body>
+</html>
