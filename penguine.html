@@ -7,12 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<style>
-</style>
+<script> 
+        
+        function displayImage()
+        {
+            var imagesArray=["images/penguin0.png","images/penguin1.png",
+        "images/penguin2.png","images/penguin3.png","images/penguin4.png",
+        "images/penguin5.png","images/penguin6.png","images/penguin7.png","images/yeti.png"];
+        for(i=0;i<9;i++)
+        {
+            var num=Math.floor(Math.random()*9);
+            var img=imagesArray[num];
+            var imgStr='<img src="' + img +'" alt="">';
+            document.write(imgStr);
+        }
+        }
 
+
+</script> 
 <body>
-    <!-- <div class="column"> -->
-        <img src="images/penguin0.png" style="width:30%">
+        <!-- <img src="images/penguin0.png" style="width:30%">
         <img src="images/penguin1.png" style="width:30%">
         <img src="images/penguin2.png" style="width:30%">
         <img src="images/penguin3.png" style="width:30%">
@@ -20,8 +34,10 @@
         <img src="images/yeti.png" style="width:30%">
         <img src="images/penguin5.png" style="width:30%">
         <img src="images/penguin6.png" style="width:30%">
-        <img src="images/penguin7.png" style="width:30%">
-    <!-- </div> -->
+        <img src="images/penguin7.png" style="width:30%"> -->
+        <button onclick="displayImage()">Start</button>
+    
+    
 </body>
 
 </html>
